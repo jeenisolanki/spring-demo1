@@ -1,0 +1,11 @@
+package com.contriller;
+
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class HomeController {
+	public static void main(String[] args) {
+		Resource resourece = new ClassPathResource("beans.xml");
+	}
+
+}
