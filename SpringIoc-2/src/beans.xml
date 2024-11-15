@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.entity.Employee">
+		<property name="eid" value="101"></property>
+		<property name="ename" value="jeenal"></property>
+		<property name="esalary" value="55000.00"></property>
+
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="Jeenal"></constructor-arg>
+		<constructor-arg value="88000.0"></constructor-arg>
+
+	</bean>
+	<bean id="stu" class="com.entity.Student">
+		<property name="sid" value="101"></property>
+		<property name="sname" value="Rinkal"></property>
+		<property name="marks">
+		<list>
+			<value>90</value>
+			<value>88</value>
+			<value>77</value>
+			</list>
+
+		</property>
+		<property name="saddress">
+		<map>
+		<entry key="1" value="Mumbai"></entry>
+		<entry key ="2" value ="mulund"></entry>
+		<entry key ="3" value ="pune"></entry>
+		
+		</map>
+		</property>
+</bean>
+
+</beans>

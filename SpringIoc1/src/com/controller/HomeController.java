@@ -29,6 +29,7 @@ public class HomeController {
 		bean1.employeeDetails();
 		Order bean2 =(Order)apc.getBean("ord");
 		bean2.orderDetail();
+		System.out.println("end");
 		
 				
 		
